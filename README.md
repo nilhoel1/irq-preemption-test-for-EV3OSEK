@@ -1,10 +1,16 @@
 irq-preemption-test-for-EV3OSEK
 
 The content of example/IrqPreemtionTest has to be moved to the example folder in EV3OSEK.
+
 The Programm can then be executed by using make and flashing to sd. 
+
 For further instructions refere to the EV3OSEK Repo.
 
-Results in EV3OSEK with old patched cpu_support.S and execeptionhandler.S:
+
+
+Results in EV3OSEK with old cpu_support.S and execeptionhandler.S:
+
+
 Task 2(0, 0, 0) start at 1.
 
 Task 2(0, 2, 0) end at 2009.
@@ -56,7 +62,9 @@ Task 1(20, 18, 4) end at 31999.
 Task 1(20, 20, 4) start at 33001.
 
 Results in EV3OSEK with patched cpu_support.S and exceptionhandler.S:
+
 Typings are sometimes nested cause a task was interupted while printing to console!
+
 
 Task 2(0, 0, 0) start at 1.
 
