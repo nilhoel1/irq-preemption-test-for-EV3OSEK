@@ -1,4 +1,4 @@
-###irq-preemption-test-for-EV3OSEK
+### irq-preemption-test-for-EV3OSEK
 
 The content of example/IrqPreemtionTest has to be moved to the example folder in EV3OSEK.
 
@@ -8,8 +8,8 @@ For further instructions refere to the EV3OSEK Repo.
 
 
 
-#Results in EV3OSEK with old cpu_support.S and execeptionhandler.S:
-
+# Results in EV3OSEK with old cpu_support.S and execeptionhandler.S:
+'''
 Task 2(0, 0, 0) start at 1.
 
 Task 2(0, 2, 0) end at 2005.
@@ -19,13 +19,13 @@ Task 3(0, 2, 0) start at 2007.
 Task 1(0, 2, 2) start at 4001.
 
 Task 1(2, 2, 2) end at 5995.
-
+'''
 
 
 Here goes something wrong, cause the OS hangs after 6s and no other Task gets loaded.
 
-##Results in EV3OSEK with patched cpu_support.S and exceptionhandler.S:
-
+## Results in EV3OSEK with patched cpu_support.S and exceptionhandler.S:
+'''
 Task 2(0, 0, 0) start at 1.
 
 Task 2(0, 2, 0) end at 2004.
@@ -133,5 +133,5 @@ Task 1(28, 16, 8) start at 60001.
 Task 1(30, 16, 8) end at 62091.
 
 Task 2(30, 16, 8) end at 62181.
-
+'''
 
