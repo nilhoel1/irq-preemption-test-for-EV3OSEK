@@ -44,7 +44,7 @@ CPU ARM926EJ_S
     AUTOSTART = TRUE
     {
       ALARMTIME = 1;
-      CYCLETIME = 4000;
+      CYCLETIME = 5000;
       APPMODE = appmode1;
     };
   };
