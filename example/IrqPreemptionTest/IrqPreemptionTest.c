@@ -32,7 +32,7 @@ TASK(Task1)
   ReleaseResource(Print);
   LOOP1(1,562*500);
   //printf("Task 1 intermediate ends.\n\r");
-  LOOP2(1,562*1500);
+  LOOP2(0,562*1500);
   GetResource(Print);
   getTime();
   printf("Task 1(%i, %i, %i) end at %i.\n\r",a,b,c,current_time);
@@ -48,7 +48,7 @@ TASK(Task2)
   ReleaseResource(Print);
   LOOP1(2,562*500);
   //printf("Task 2 intermediate ends.\n\r");
-  LOOP2(2,562*1500);
+  LOOP2(0,562*1500);
   GetResource(Print);
   getTime();
   printf("Task 2(%i, %i, %i) end at %i.\n\r",a,b,c,current_time);
@@ -64,7 +64,7 @@ TASK(Task3)
   ReleaseResource(Print);
   LOOP1(3,562*500);
   //printf("Task 2 intermediate ends.\n\r");
-  LOOP2(3,562*1500);
+  LOOP2(0,562*1500);
   GetResource(Print);
   getTime();
   printf("Task 3(%i, %i, %i) end at %i.\n\r",a,b,c,current_time);
