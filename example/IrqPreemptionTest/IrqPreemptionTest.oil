@@ -18,6 +18,12 @@ CPU ARM926EJ_S
   /* Definition of application mode */
   APPMODE appmode1{}; 
   
+  /* Defintion of Resource */
+  RESOURCE Print
+  {
+    RESOURCEPROPERTY = STANDARD;
+  };
+  
   /* Definition of tasks */
   TASK Task1
   {
@@ -26,6 +32,7 @@ CPU ARM926EJ_S
     ACTIVATION = 1;
     SCHEDULE = FULL;
     STACKSIZE = 4096;
+    RESOURCE = Print;
   };
   ALARM Task1_Alarm
   {
@@ -37,7 +44,7 @@ CPU ARM926EJ_S
     AUTOSTART = TRUE
     {
       ALARMTIME = 1;
-      CYCLETIME = 3000;
+      CYCLETIME = 4000;
       APPMODE = appmode1;
     };
   };
@@ -49,6 +56,7 @@ CPU ARM926EJ_S
     ACTIVATION = 1;
     SCHEDULE = FULL;
     STACKSIZE = 4096;
+    RESOURCE = Print;
   };
   ALARM Task2_Alarm
   {
@@ -72,6 +80,7 @@ CPU ARM926EJ_S
     ACTIVATION = 1;
     SCHEDULE = FULL;
     STACKSIZE = 4096;
+    RESOURCE = Print;
   };
   ALARM Task3_Alarm
   {
@@ -106,7 +115,7 @@ CPU ARM926EJ_S
     AUTOSTART = TRUE
     {
       ALARMTIME = 1;
-      CYCLETIME = 10;
+      CYCLETIME = 20;
       APPMODE = appmode1;
     };
   };
