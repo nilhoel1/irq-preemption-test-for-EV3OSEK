@@ -7,7 +7,6 @@
 #define LOOP2(ID,End) if(ID==1){a++;}else if(ID==2){b++;}else if(ID==3){c++;} for(int l=0; l<End; l++){j|=j<<1;}
 #define getTime() current_time = systick_get_ms()-first_start;
 
-DeclareTask(Task_Stub);
 DeclareTask(Task1);
 DeclareTask(Task2);
 DeclareTask(Task3);
@@ -57,13 +56,6 @@ TASK(Task3)
   LOOP2(3,562*1500);
   getTime();
   printf("Task 3(%i) end at %i.\n\r",c,current_time);
-  TerminateTask();
-}
-
-// Testing purpose
-// Result: It will loop around 310 times for 1ms
-TASK(Task_Stub)
-{  
   TerminateTask();
 }
 

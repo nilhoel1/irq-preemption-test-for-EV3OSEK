@@ -25,30 +25,7 @@ CPU ARM926EJ_S
   };
   
   /* Definition of tasks */
-  
-    TASK Task_Stub
-  {
-    AUTOSTART = FALSE;
-    PRIORITY = 1;
-    ACTIVATION = 1;
-    SCHEDULE = FULL;
-    STACKSIZE = 4096;
-  };
-  ALARM Task_Stub_Alarm
-  {
-    COUNTER = SysTimerCnt;
-    ACTION = ACTIVATETASK
-    {
-      TASK = Task_Stub;
-    };
-    AUTOSTART = TRUE
-    {
-      ALARMTIME = 1;
-      CYCLETIME = 1000;
-      APPMODE = appmode1;
-    };
-  };
-  
+
   TASK Task1
   {
     AUTOSTART = TRUE;

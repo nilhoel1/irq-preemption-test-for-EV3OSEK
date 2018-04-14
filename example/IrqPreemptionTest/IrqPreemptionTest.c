@@ -7,7 +7,7 @@
 #define LOOP2(ID,End) if(ID==1){a++;}else if(ID==2){b++;}else if(ID==3){c++;} for(int l=0; l<End; l++){j|=j<<1;}
 #define getTime() current_time = systick_get_ms()-first_start;
 
-DeclareTask(Task_Stub);
+
 DeclareTask(Task1);
 DeclareTask(Task2);
 DeclareTask(Task3);
@@ -72,11 +72,6 @@ TASK(Task3)
   TerminateTask();
 }
 
-
-TASK(Task_Stub)
-{  
-  TerminateTask();
-}
 
 
 
